@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BottomLottieActivity</string>
+    <string name="bottom_tab_home">首页</string>
+    <string name="bottom_tab_video">视频</string>
+    <string name="bottom_tab_micro">微头条</string>
+    <string name="bottom_tab_me">我的</string>
+    <string name="bottom_tab_category">分类</string>
+    <string name="bottom_tab_cart">购物车</string>
+</resources>

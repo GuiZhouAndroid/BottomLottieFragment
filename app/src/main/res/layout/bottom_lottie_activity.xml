@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.zs.itking.BottomLottieFragment.bottom.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/tab_gb"
+        >
+
+        <com.zs.itking.BottomLottieFragment.bottom.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconWidth="30dp"
+            app:iconHeight="30dp"
+            app:lottieJson="bottom_home.json"
+            app:itemText="@string/bottom_tab_home"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:touchDrawable="@drawable/bottom_selector_bg"
+            />
+        <com.zs.itking.BottomLottieFragment.bottom.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconWidth="30dp"
+            app:iconHeight="30dp"
+            app:lottieJson="bottom_category.json"
+            app:itemText="@string/bottom_tab_category"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:unreadThreshold="999"
+            app:touchDrawable="@drawable/bottom_selector_bg"
+            />
+
+        <com.zs.itking.BottomLottieFragment.bottom.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconWidth="30dp"
+            app:iconHeight="30dp"
+            app:lottieJson="bottom_cart.json"
+            app:itemText="@string/bottom_tab_cart"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:touchDrawable="@drawable/bottom_selector_bg"
+            />
+
+        <com.zs.itking.BottomLottieFragment.bottom.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconWidth="30dp"
+            app:iconHeight="30dp"
+            app:lottieJson="bottom_mine.json"
+            app:itemText="@string/bottom_tab_me"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:touchDrawable="@drawable/bottom_selector_bg"
+            />
+
+    </com.zs.itking.BottomLottieFragment.bottom.BottomBarLayout>
+</LinearLayout>
